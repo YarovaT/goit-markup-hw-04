@@ -146,7 +146,17 @@ header {
   background-color: var(--accent-background-color);
 }
 
-.main-container {
+.overlay {
+  padding-top: 175px;
+  padding-bottom: 175px;
+  margin: auto;
+
+  background: url("../images/hero.jpg") no-repeat center;
+  background-color: #c4c4c4;
+  background-size: 1600px 600px;
+}
+
+.nav-container {
   text-align: center;
 }
 
