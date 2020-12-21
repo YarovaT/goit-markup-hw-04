@@ -1,0 +1,377 @@
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона  #2f303a */
+/* белый цвет #FFFFFF */
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцентный цвет #2196F3 */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+  --primary-font-size: 14px;
+  --secondary-font-size: 16px;
+  --primary-font-weight: 500;
+  --secondary-font-weight: 700;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+/*Основной контейнер*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Убирает маркеры и отступы*/
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Убирает подчеркивание у ссылок*/
+.nav-link,
+.contact-link,
+.project-link,
+.address-link,
+.logo {
+  text-decoration: none;
+}
+/*Скрывает заголовки*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Основная навигация сайта */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Логотип сайта */
+.logo {
+  margin-right: 93px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.2;
+}
+
+.logo-start {
+  color: var(--accent-color);
+}
+.logo-end {
+  color: #000000;
+}
+
+.logo-end-footer {
+  color: var(--primary-background-color);
+}
+
+/* Навигация сайта*/
+.nav-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-site,
+.contact,
+.features-info {
+  display: flex;
+}
+
+.nav-site .item + .item,
+.contact .item + .item {
+  margin-left: 50px;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+.nav-link,
+.contact-link {
+  font-weight: var(--primary-font-weight);
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--primary-text-color);
+}
+
+.contact-link {
+  color: var(--secondary-text-color);
+}
+
+.nav-site .nav-link.current {
+  color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/*Главная страница Студии*/
+
+/*Герой*/
+.main-box {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--accent-background-color);
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-title {
+  padding-right: 252px;
+  padding-left: 252px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+}
+
+/*Включает заглавные буквы*/
+.main-title,
+.features-title {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* Особенности */
+.features,
+.team,
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-info .item + .item {
+  margin-left: 30px;
+}
+
+.features-text,
+.project-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  font-size: var(--primary-font-size);
+}
+
+.features-text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/* Основные направления */
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.card-image {
+  display: block;
+  margin: 0;
+}
+
+.direct {
+  padding-bottom: 94px;
+}
+
+.direct-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Команда */
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-container {
+  display: flex;
+}
+
+.team-info {
+  display: flex;
+  margin-right: 30px;
+  background-color: var(--primary-background-color);
+}
+
+.team-name,
+.team-text {
+  text-align: center;
+}
+
+.team-info:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-name,
+.team-text {
+  font-size: var(--primary-font-size);
+  line-height: 1.19;
+}
+
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: var(--primary-font-weight);
+}
+
+.team-text {
+  padding-bottom: 30px;
+
+  color: var(--secondary-text-color);
+}
+
+/*Главная страница Портфолио*/
+.btn-filter {
+  display: flex;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+/*убрать марджин*/
+
+.item-btn .btn {
+  margin-left: 8px;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100%-60px) / 3);
+
+  background-color: var(--primary-background-color);
+}
+
+.project-item {
+  margin-right: 29px;
+  margin-bottom: 29px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-list {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.project-text {
+  font-size: var(--secondary-font-size);
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
+
+/* Подвал сайта */
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--accent-background-color);
+}
+
+.address {
+  padding-top: 20px;
+
+  font-size: var(--primary-font-size);
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--primary-background-color);
+}
+
+.address-item {
+  padding-bottom: 9px;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Кнопки */
+.button,
+.btn {
+  border-radius: 4px;
+  border-color: transparent;
+  font-size: var(--secondary-font-size);
+  cursor: pointer;
+}
+
+.button {
+  min-width: 200px;
+  padding: 10px 32px;
+
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+
+.btn {
+  min-width: 73px;
+  padding: 6px 22px;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-text-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--accent-color);
+  color: var(--primary-background-color);
+}
