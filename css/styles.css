@@ -349,11 +349,7 @@ img {
 .team-icon:hover,
 .team-icon:focus {
   background-color: var(--accent-color);
-}
-
-.icon:hover,
-.icon:focus {
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 /*Главная страница Портфолио*/
@@ -392,8 +388,8 @@ img {
   margin-bottom: 29px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -465,8 +461,8 @@ img {
   margin-right: 0;
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
