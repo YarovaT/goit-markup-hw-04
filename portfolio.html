@@ -22,13 +22,13 @@
     <!--Шапка сайта-->
     <header>
       <!--Основная навигация сайта-->
-      <div class="container">
-        <nav class="main-nav">
+      <div class="container flex">
+        <nav class="main-nav flex">
           <a href="./index.html" class="logo">
             <span class="logo-start">Web</span
             ><span class="logo-end">Studio</span>
           </a>
-          <ul class="nav-site list">
+          <ul class="nav-site list flex">
             <li class="item">
               <a href="./index.html" class="nav-link">Студия</a>
             </li>
@@ -40,9 +40,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact list">
+        <ul class="contact list flex">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link">
+            <a href="mailto:info@devstudio.com" class="contact-link flex">
               <svg class="contact-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
@@ -50,8 +50,8 @@
             </a>
           </li>
 
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link">
+          <li class="item flex">
+            <a href="tel:+380961111111" class="contact-link flex">
               <svg class="contact-icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -94,7 +94,7 @@
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 class="project-title list">Технокряк</h2>
+                  <h2 class="project-title">Технокряк</h2>
                   <p class="project-text">Веб-сайт</p>
                 </div>
               </a>
@@ -107,7 +107,7 @@
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 class="project-title list">
+                  <h2 class="project-title">
                     Постер New Orlean vs Golden Star
                   </h2>
                   <p class="project-text">Дизайн</p>
@@ -122,7 +122,7 @@
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 class="project-title list">Ресторан Seafood</h2>
+                  <h2 class="project-title">Ресторан Seafood</h2>
                   <p class="project-text">Приложение</p>
                 </div>
               </a>
@@ -135,7 +135,7 @@
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 class="project-title list">Проект Prime</h2>
+                  <h2 class="project-title">Проект Prime</h2>
                   <p class="project-text">Маркетинг</p>
                 </div>
               </a>
@@ -144,7 +144,7 @@
               <a href="#" class="project-link">
                 <img src="./images/boxes.jpg" alt="Две коробки" width="370" />
                 <div class="project-list">
-                  <h2 class="project-title list">Проект Boxes</h2>
+                  <h2 class="project-title">Проект Boxes</h2>
                   <p class="project-text">Приложение</p>
                 </div>
               </a>
@@ -157,7 +157,7 @@
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 lang="en" class="project-title list">
+                  <h2 lang="en" class="project-title">
                     Inspiration has no Borders
                   </h2>
                   <p class="project-text">Веб-сайт</p>
@@ -165,14 +165,14 @@
               </a>
             </li>
             <li class="project-item">
-              <a href="#" class="project-link list">
+              <a href="#" class="project-link">
                 <img
                   src="./images/journal.jpg"
                   alt="Открытая страница издания с надписью Я-ограниченный выпуск"
                   width="370"
                 />
                 <div class="project-list">
-                  <h2 class="project-title list">Издание Limited Edition</h2>
+                  <h2 class="project-title">Издание Limited Edition</h2>
                   <p class="project-text">Дизайн</p>
                 </div>
               </a>
@@ -181,7 +181,7 @@
               <a href="#" class="project-link">
                 <img src="./images/label.jpg" alt="Ярлык тег" width="370" />
                 <div class="project-list">
-                  <h2 class="project-title list">Проект LAB</h2>
+                  <h2 class="project-title">Проект LAB</h2>
                   <p class="project-text">Маркетинг</p>
                 </div>
               </a>
@@ -205,16 +205,16 @@
     </main>
     <!--Подвал сайта-->
     <footer class="footer-page">
-      <div class="container">
+      <div class="container flex">
         <div>
           <a href="./index.html" class="logo"
             ><span class="logo-start">Web</span
             ><span class="logo-end-footer">Studio</span></a
           >
           <address class="address">
-            <span class="address-item">г. Киев, пр-т Леси Украинки, 26</span>
+            <span class="address-text">г. Киев, пр-т Леси Украинки, 26</span>
             <br />
-            <a href="mailto:info@example.com" class="address-link address-item"
+            <a href="mailto:info@example.com" class="address-link"
               >info@example.com</a
             >
             <br />
@@ -224,31 +224,31 @@
           </address>
         </div>
         <div class="social-links">
-          <p class="title list">присоединяйтесь</p>
-          <ul class="social-list list">
-            <li class="item-icon list">
-              <a class="social-link list" href="#">
+          <p class="text">присоединяйтесь</p>
+          <ul class="list flex">
+            <li class="item-icon">
+              <a class="social-link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="social-link list" href="#">
+              <a class="social-link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="social-link list" href="#">
+              <a class="social-link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="social-link list" href="#">
+              <a class="social-link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
