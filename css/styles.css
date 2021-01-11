@@ -23,8 +23,9 @@ body {
   font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.03em;
-  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
+
+  background-color: var(--primary-background-color);
 }
 
 header {
@@ -33,6 +34,7 @@ header {
 
 img {
   display: block;
+
   max-width: 100%;
   height: auto;
 }
@@ -47,35 +49,19 @@ p {
   margin: 0;
 }
 
-/*Основной контейнер*/
+/*Убирает подчеркивание у ссылок*/
 
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-
-  margin-left: auto;
-  margin-right: auto;
+a {
+  text-decoration: none;
 }
 
-.flex {
-  display: flex;
-}
 /*Убирает маркеры и отступы*/
 
 .list {
   margin: 0;
   padding: 0;
+
   list-style: none;
-}
-
-/*Убирает подчеркивание у ссылок*/
-
-.nav-link,
-.contact-link,
-.project-link,
-.address-link,
-.logo {
-  text-decoration: none;
 }
 
 /*Скрывает заголовки*/
@@ -87,6 +73,81 @@ p {
   height: 1px;
   margin: -1px;
 }
+
+/*Основной контейнер*/
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+
+  width: 1200px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Кнопки */
+.button,
+.btn {
+  margin: 2px 0;
+  font-size: var(--secondary-font-size);
+
+  border-radius: 4px;
+  border: solid 1px transparent;
+
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.button {
+  padding: 10px 32px;
+  margin-left: 247px;
+
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  padding: 6px 22px;
+
+  font-weight: var(--primary-font-weight);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  background-color: var(--secondary-background-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--primary-background-color);
+
+  background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-filter {
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Шапка сайта */
 
 /* Основная навигация сайта */
 
@@ -148,6 +209,7 @@ p {
 
 .contact-icon {
   width: 36px;
+
   fill: currentColor;
 }
 
@@ -173,13 +235,15 @@ p {
 
 /*Главная страница Студии*/
 
-/*Герой*/
+/* Секция Герой*/
 .hero-overlay {
-  height: 100vh;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+
+  height: 100vh;
 
   background-color: #c4c4c4;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -195,6 +259,7 @@ p {
 .hero-overlay .container {
   align-items: center;
   justify-content: center;
+
   height: 100%;
 }
 
@@ -202,13 +267,7 @@ p {
   width: 60%;
 }
 
-.hero-content .button {
-  margin: 0px 247px;
-}
-
 .hero-title {
-  text-align: center;
-
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -216,6 +275,7 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
+  text-align: center;
 }
 
 /*Включает заглавные буквы*/
@@ -225,7 +285,7 @@ p {
   text-transform: uppercase;
 }
 
-/* Особенности */
+/* Секция Особенности */
 
 .features,
 .team,
@@ -241,16 +301,17 @@ p {
 /*Добавляет иконки*/
 
 .features-icon {
+  margin-bottom: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 270px;
   height: 120px;
-  border-radius: 4px;
 
-  margin-bottom: 30px;
   background-color: var(--secondary-background-color);
+
+  border-radius: 4px;
 }
 
 .features-title {
@@ -264,7 +325,7 @@ p {
   color: var(--secondary-text-color);
 }
 
-/* Основные направления */
+/* Секция Основные направления */
 
 .subtitle {
   margin-bottom: 50px;
@@ -278,14 +339,16 @@ p {
   padding-bottom: 94px;
 }
 
-/* Команда */
+/* Секция Команда */
 .team {
   background-color: var(--secondary-background-color);
 }
 
 .team-info {
   margin-right: 30px;
+
   background-color: var(--primary-background-color);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -297,40 +360,41 @@ p {
 
 .team-name,
 .team-text {
-  text-align: center;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-name {
   margin-top: 30px;
   margin-bottom: 10px;
+
   font-weight: var(--primary-font-weight);
 }
 
 .team-text {
   margin-bottom: 16px;
+
   color: var(--secondary-text-color);
 }
 
 .icons {
+  margin: 0px 32px 30px 32px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 32px 30px 32px;
 }
 
 .team-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 44px;
   height: 44px;
 
-  background-color: var(--primary-background-color);
   color: #afb1b8;
 
-  text-decoration: none;
+  background-color: var(--primary-background-color);
 
   border-radius: 50%;
 }
@@ -341,18 +405,11 @@ p {
 
 .team-icon:hover,
 .team-icon:focus {
-  background-color: var(--accent-color);
   color: var(--primary-background-color);
+  background-color: var(--accent-color);
 }
 
 /*Главная страница Портфолио*/
-
-.btn-filter {
-  display: flex;
-
-  margin-bottom: 50px;
-  justify-content: center;
-}
 
 .item-btn {
   margin-right: 8px;
@@ -365,25 +422,22 @@ p {
 .project-info {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc(100% / 3 - 30px);
+
   background-color: var(--primary-background-color);
 }
 
-.block {
-  display: block;
-}
-
 .project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
   display: flex;
-  margin-right: 29px;
-  margin-bottom: 29px;
 }
 
 .project-link:hover,
 .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  
 }
 
 .project-item:nth-child(3n) {
@@ -391,8 +445,8 @@ p {
 }
 
 .project-list {
-  margin-right: 0;
-  padding: 18px 22px;
+  padding: 20px 0px 19px 23px;
+
   border: 1px solid #eeeeee;
 }
 
@@ -402,6 +456,7 @@ p {
 
 .project-title {
   margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -417,28 +472,30 @@ p {
 /*Клиенты*/
 
 .clients {
+  padding: 94px 0px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  padding: 94px 0px;
 }
 
 .link {
-  width: 170px;
-  height: 90px;
   display: flex;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  color: #afb1b8;
-
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  width: 170px;
+  height: 90px;
+
+  color: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-text {
   margin-bottom: 50px;
 }
+
 .item-clients {
   margin-right: 30px;
 }
@@ -466,9 +523,9 @@ p {
 .address {
   margin-top: 20px;
 
+  font-style: normal;
   font-size: var(--primary-font-size);
   line-height: 1.71;
-  font-style: normal;
   color: var(--primary-background-color);
 }
 
@@ -486,25 +543,22 @@ p {
 }
 
 .text {
-  font-weight: var(--secondary-font-weight);
-
-  color: var(--primary-background-color);
-
   margin-bottom: 20px;
+
+  font-weight: var(--secondary-font-weight);
+  color: var(--primary-background-color);
 }
 
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 44px;
   height: 44px;
 
-  background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-background-color);
 
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
 
   border-radius: 50%;
 }
@@ -527,44 +581,3 @@ p {
 }
 
 /* Кнопки */
-.button,
-.btn {
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  font-size: var(--secondary-font-size);
-  cursor: pointer;
-}
-
-.button {
-  padding: 10px 32px;
-
-  font-weight: var(--secondary-font-weight);
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--primary-background-color);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.btn {
-  padding: 6px 22px;
-
-  font-weight: var(--primary-font-weight);
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  background-color: var(--secondary-background-color);
-  color: var(--primary-text-color);
-}
-
-.btn:hover,
-.btn:focus {
-  background: var(--accent-color);
-  color: var(--primary-background-color);
-}
-
-.button:hover,
-.button:focus {
-  background: #188ce8;
-}
